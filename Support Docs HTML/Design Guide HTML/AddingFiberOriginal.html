@@ -1,0 +1,189 @@
+<blockquote>
+<h3>Quick Check</h3>
+<p>Always load the correct fiber into the machine, the print parameters are different for each fiber.</p>
+</blockquote>
+<p> </p>
+<p><br /><span class="wysiwyg-font-size-x-large">Automatic Fiber Routing<br /></span></p>
+<blockquote>
+<h3>Pro Tip</h3>
+<p>Eiger attempts to create a <a href="/hc/en-us/articles/204109285-Maximizing-Strength-to-Weight-Sandwich-Panels-">sandwich panel</a>, which is the aerospace version of an I-Beam. By default it will place fiber on the top and bottom of your part.</p>
+</blockquote>
+<p> </p>
+<ol>
+<li><span class="wysiwyg-font-size-medium">Locate your part in Eiger or <a href="/hc/en-us/articles/202663835-Import-STLs-Into-Eiger">Upload a new Part</a></span></li>
+<li>On the right hand side of the screen is the <strong>Part Settings</strong> Sidebar</li>
+<li>Click on <strong>Material Settings</strong> to expand it <img src="https://drive.google.com/uc?export=download&amp;id=0Bx6GhpPgCXQbdHg0cEFqUUN0X3M" alt="Part Page - Materia Settings Highlighted" /></li>
+<li>
+<p>Locate the <strong>Use Fiber</strong> setting and turn it on.</p>
+<p><img src="https://drive.google.com/uc?export=download&amp;id=0Bx6GhpPgCXQbZmd1bU5ESkg5Yjg" alt="Use Fiber" /></p>
+</li>
+<li>
+<p>Once Fiber is turned on new settings will appear</p>
+<p><img src="https://drive.google.com/uc?export=download&amp;id=0Bx6GhpPgCXQbOFpkeHJlVWtWNm8" alt="Fiber On" /></p>
+</li>
+<li>
+<p>Select the type of fiber you will be printing (<strong>Carbon Fiber</strong>, <strong>Fiber Glass</strong> or <strong>Kevlar</strong>). <em> </em></p>
+</li>
+<li>Select the fill type to use with the fiber</li>
+<li>
+<p>Additionally a few more settings will appear in the <strong>Advanced Settings</strong> dropdown.</p>
+<p><img src="https://drive.google.com/uc?export=download&amp;id=0Bx6GhpPgCXQbbUNMQTMyaTBfd3c" alt="Fiber On" /></p>
+<ul>
+<li><strong>Fiber Layers</strong>: The number of layers that contain fiber on the bottom and top of your part. For example if you use 10 fiber layers your part will have 10 layers on the bottom and 10 layers on the top.</li>
+<li><strong>Roof Above Fiber</strong>: The number of layers between the top of your part and the start of the top of the sandwich panel. Use this setting to control where the top of the sandwich panel begins.</li>
+<li><strong>Concentric Fiber Rings</strong>: The maximum number of rings Eiger will attempt to insert on each fiber layer when using the <strong>Concentric fill</strong>.</li>
+</ul>
+</li>
+<li>Once you have configured the fiber in your part press <strong>Save</strong> to apply the changes.</li>
+</ol>
+<blockquote>
+<p><strong>If a layer is not large enough</strong> to contain fiber (about the size of a quarter), the part will revert back to plastic (automatically). </p>
+</blockquote>
+<p> </p>
+<p> </p>
+<p><span class="wysiwyg-font-size-x-large">Advanced Fiber Placement (Manual Fiber Routing)</span></p>
+<p>For engineers who want full control of the fiber routing, Eiger lets you edit the part layer-by-layer. </p>
+<p> </p>
+<p><img src="https://drive.google.com/uc?export=download&amp;id=0Bx6GhpPgCXQbYnJ4b3g3U0lWUkU" alt="Internal View" /></p>
+<ul>
+<li>The top level settings default to a sandwich panel. If you would like to control where fiber is placed on a layer by layer basis open up the <strong>Internal View</strong></li>
+</ul>
+<p> </p>
+<p><img src="https://drive.google.com/uc?export=download&amp;id=0Bx6GhpPgCXQbMjNCQkg1NWRuRm8" alt="Internal View" /></p>
+<ul>
+<li>The Internal View shows the Part's internal structure.</li>
+<li><strong>3D</strong> <strong>View</strong> provides an overview of the part (default view)</li>
+</ul>
+<p> </p>
+<p><img src="https://drive.google.com/uc?export=download&amp;id=0Bx6GhpPgCXQbcjFrUnRqSjFXSzg" alt="Internal View" /></p>
+<ul>
+<li><strong>Use 2D</strong> view to edit individual layers of the Part. </li>
+</ul>
+<p> </p>
+<p><img src="https://drive.google.com/uc?export=download&amp;id=0Bx6GhpPgCXQbYXFrcldKWUZlNDg" alt="Internal View - 2D Slider" /></p>
+<ul>
+<li>Use the slider at the bottom of the screen to scroll through the layers or or select an individual layer.</li>
+</ul>
+<p> </p>
+<p><img src="https://drive.google.com/uc?export=download&amp;id=0Bx6GhpPgCXQbVlAyWWlyNHdlZXM" alt="Internal View - 2D Edit Menu" /></p>
+<ul>
+<li>Click on the <strong>Edit</strong> menu in the top right to get a list of editable settings for the selected layer.</li>
+</ul>
+<p> </p>
+<p><img src="https://drive.google.com/uc?export=download&amp;id=0Bx6GhpPgCXQbS05YRmVMOFNZRmM" alt="Internal View - 2D Edit Menu" /></p>
+<ul>
+<li>Here you can change what the plastic infill pattern is, turn fiber on or off and insert a pause after this layer has finished printing. </li>
+</ul>
+<p> </p>
+<p> </p>
+<p><span class="wysiwyg-font-size-x-large">Minimum Feature Size</span></p>
+<p>The Mark One embeds continuous strands of fiber. In a given layer, there must be enough area to route the fiber. The minimum area is about 1" square . Sections smaller than this cannot have continuous fiber, and are bellow the minimum feature size. These will automatically be filled in with plastic. </p>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201651479/Screen_Shot_2015-02-21_at_4.25.25_PM.png" alt="" width="801" height="501" /></p>
+<ul>
+<li><strong>This iPhone 5s case has two rings of fiber, which is the minimum size required for a layer.</strong></li>
+</ul>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201651489/Screen_Shot_2015-02-21_at_4.25.40_PM.png" alt="" width="801" height="501" /></p>
+<ul>
+<li><strong>Here is the same iPhone 5s Case in 2D editing view.</strong> The yellow lines depict the Kevlar rings.</li>
+<li>More fiber can be added.</li>
+</ul>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201651509/Screen_Shot_2015-02-21_at_4.33.05_PM.png" alt="" width="801" height="501" /></p>
+<ul>
+<li>Here is the case filled with fiber.</li>
+<li><em>Note: the center is not large enough to completely fill with fiber (which has an integer width. You are looking at the remainder).</em></li>
+</ul>
+<p> </p>
+<p><em><img src="/hc/en-us/article_attachments/201722355/Screen_Shot_2015-02-21_at_4.34.56_PM.png" alt="" width="801" height="501" /></em></p>
+<ul>
+<li><strong>The walls of the case are too thin to fill with continuous fiber.</strong> There is not enough surface area in each section for the minimum fiber fill.</li>
+</ul>
+<p> </p>
+<p> </p>
+<p><span class="wysiwyg-font-size-x-large">Incomplete Fiber Fill (Small Areas)</span></p>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201651529/Screen_Shot_2015-02-21_at_5.56.37_PM.png" alt="" width="800" height="500" /></p>
+<ul>
+<li>Here's an iPhone 6 case that demonstrates various infill limitations.</li>
+</ul>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201722375/Screen_Shot_2015-02-21_at_5.58.51_PM.png" alt="" width="800" height="500" /></p>
+<ul>
+<li><strong>Adding up many layers provides complete fill.</strong></li>
+<li>Individual layers may not be able to fill fiber in each section (nylon will fill the gaps).</li>
+</ul>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201722385/Screen_Shot_2015-02-21_at_6.00.40_PM.png" alt="" width="800" height="500" /></p>
+<ul>
+<li><strong>Note the fiber gaps at the upper right, and lower left position.</strong></li>
+<li>Eiger automatically fills these gaps with nylon.</li>
+</ul>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201651539/Screen_Shot_2015-02-21_at_6.00.48_PM.png" alt="" width="800" height="500" /></p>
+<ul>
+<li>Again, note the nylon filling in the sections fiber can't reach.</li>
+</ul>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201722395/Screen_Shot_2015-02-21_at_6.03.52_PM.png" alt="" width="800" height="500" /></p>
+<ul>
+<li>Note the nylon filling in the sections fiber can't reach.</li>
+</ul>
+<p> </p>
+<blockquote>
+<p>Quick Tip</p>
+<p>While there are small gaps in the fiber fill in some layers, rotating the fiber angles means the gaps don't overlap.  This makes the overall part extremely strong.</p>
+</blockquote>
+<p> </p>
+<p> </p>
+<p><span class="wysiwyg-font-size-x-large">Fiber Fill Paterns - Pinch Points and Part Size</span></p>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201651559/Screen_Shot_2015-02-21_at_6.17.43_PM.png" alt="" width="800" height="500" /></p>
+<ul>
+<li>This quad copter will demonstrate some of the fill patterns for small areas.</li>
+</ul>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201651549/Screen_Shot_2015-02-21_at_6.19.20_PM.png" alt="" width="800" height="500" /></p>
+<ul>
+<li><strong>Large areas are filled with fiber</strong>. Notice the base of the part (in back) has lots of fiber.</li>
+<li><strong>Small areas have thinner fiber sections.</strong> The bottom of the arm shows one ring of fiber extending through the arm.</li>
+<li>The top of the arm has three rings of fiber.</li>
+</ul>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201722415/Screen_Shot_2015-02-21_at_6.23.23_PM.png" alt="" width="800" height="500" /></p>
+<ul>
+<li>The 2D editing view shows the lower fiber layer.</li>
+<li><strong>Note the fiber "flows" around the part, following the wall.</strong> The base of the part has plenty of room for many fiber layers. </li>
+<li>The arm of the part gets skinny, and only allows 1 ring of fiber (2 strands) to extend all the way around.</li>
+<li><strong>The left and right nacelle's do not have enough area on their own for a separate strand of fiber, so they are filled with nylon (automatically).</strong></li>
+</ul>
+<p><strong> </strong></p>
+<p> <img src="/hc/en-us/article_attachments/201722475/Screen_Shot_2015-02-21_at_6.29.19_PM.png" alt="" width="800" height="500" /></p>
+<ul>
+<li><strong>Thicker walls, further up the part, enable more fiber to be placed.</strong></li>
+<li>This layer could be entirely filled with fiber, but the maximum strength to weight comes from filling the outer portions of the part.</li>
+</ul>
+<p> </p>
+<p> </p>
+<p><span class="wysiwyg-font-size-x-large">Reduce Plastic Walls to increase Fiber Fill</span></p>
+<p>Having 2-3 plastic walls provides great surface finish on your parts. In many aerospace applications, we reduce walls to 1, which allows more room for fiber fill. It also puts the fiber further out in a given layer, increasing the cross-sectional moment of inertia, which increases strength to weight.</p>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201668579/Screen_Shot_2015-02-24_at_2.17.27_AM.png" alt="" width="800" height="500" /></p>
+<ul>
+<li><strong>Nylon walls set to 2, allows one fiber path in arm.</strong></li>
+</ul>
+<p> </p>
+<p><img src="/hc/en-us/article_attachments/201739905/Screen_Shot_2015-02-24_at_2.23.56_AM.png" alt="" width="800" height="500" /></p>
+<ul>
+<li><strong>Nylon walls set to 1 allows a second fiber path in arm.</strong> </li>
+</ul>
+<p> </p>
+<p> </p>
+<p><span class="wysiwyg-font-size-x-large">Recap about Fiber Printing</span></p>
+<p>CFF is a new manufacturing process. Like any other manufacturing process, it has limitations. Please take into consideration the following variables when designing parts for CFF or editing layers with the Eiger:</p>
+<ul>
+<li><strong>Minimum feature size:</strong> This means that not all areas of your part can be filled with fiber. The algorithms employed by Eiger to fill your part do their best to make sure that as much fiber will fit into your part as possible.</li>
+<li><strong>The fiber has a integer width:</strong> This means the width must be accounted for when the fiber makes turns. There are some corners and turns that the fiber can't make. There are also some spaces (remainders) that cannot be filled with fiber. They will automatically be filled with nylon. </li>
+<li><strong>The fiber cannot print over mid-air:</strong> For best fiber adhesion, fill the layers below with 100% plastic fill so the fibers have something to adhere to. In the <strong>Internal View</strong> you can change the plastic <strong>Fill Type</strong> of a layer to floor or roof to give it 100% fill.</li>
+</ul>

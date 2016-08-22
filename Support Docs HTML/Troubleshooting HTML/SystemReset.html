@@ -1,0 +1,55 @@
+<!-- Goals -->
+<p><span class="wysiwyg-font-size-large"><strong>Goals:</strong></span></p>
+	<ul>
+		<li><a href=#create>Create the Factory Reset Key</a></li>
+		<li><a href=#execute>Execute the System Reset</a></li>
+	</ul>
+
+<!-- Creating the Key --> 
+<p id="create"> </p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Creating the Factory Reset Key</span></strong></span>
+ 	<p><strong>To create the factory reset key:</strong></p>
+	<ol>
+		<!-- Step 1 -->
+		<li>Download and unzip the <a href="https://www.dropbox.com/s/y8zx94q6c3gs5lt/BBB-usb-eMMC-flasher-debian-7.6-markforged-armhf-2016-03-21-2gb.img?dl=0">Markforged Factory Reset Image</a> file.</li>
+		<!-- Step 2 -->
+		<li>Insert a USB thumb drive into your computer.<br />
+			<em>NOTE: any data on the USB Key will be deleted during this process</em></li>
+		<!-- Step 3 -->
+		<li>Download, install and run <a href="http://www.osforensics.com/tools/write-usb-images.html">ImageUSB</a>. ImageUSB is a program that will allow you to turn a regular USB thumb drive into a reset key.</li>
+		<!-- Step 4 -->
+		<li>In ImageUSB, select the check box next to the USB drive you wish to reformat.</li>
+		<!-- Step 5 -->
+		<li>Select the radio button next to <strong>"Write Image to USB"</strong> in the <strong>"Step 2"</strong> panel.</li>
+		<!-- Step 6 -->
+		<li>In the <strong>"Step 3"</strong> panel, browse for the MarkForged Reset Image file that you downloaded earlier.</li>
+		<!-- Step 7 -->
+		<li>Click <strong>"Write"</strong> in the <strong>"Step 4"</strong> panel. Click <strong>"Yes"</strong> for all the popups that come up.</li>
+		<!-- Step 8 -->
+		<li>Wait for the program to complete and select <strong>"OK"</strong> when the final popup appears.</li> 
+	</ol>
+
+<!-- Execute System Reset -->	
+<p id="execute"><a href=#top>Back To Top</a></p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Executing the System Reset</strong></span></p>
+	<p><strong>To perform a System Reset of your Mark Two printer:</strong></p>
+	<ol>
+		<!-- Step 1 -->
+		<li>Turn the printer off.</li>
+		<!-- Step 2 -->
+		<li>Plug the Recovery USB drive into the USB connector on the back of the printer.</li>
+		<!-- Step 3 -->
+		<li>Turn the printer on. The printer’s display will remain dark for the first 30 seconds. After that, commands will appear and scroll down the screen, pausing for long periods of time.</li>
+		<!-- Step 4 -->
+		<li>Turn the printer off when the text <strong>"System halted"</strong> appears at the bottom of the printer display.</li>
+		<!-- Step 5 -->
+		<li>Remove the Recovery USB drive.</li>
+		<!-- Step 6 -->
+		<li>Wait several seconds and turn the printer back on. This reboot will take longer than subsequent ones. You should be returned to normal default home screen when the boot finishes.</li>
+		<!-- Step 7 -->
+		<li>Once your printer’s software has been restored to its factory default state, it is important that you <a href="/hc/en-us/articles/202326209">update the software to the latest version available</a>. </li>
+	</ol>
+ 
+ <p><a href=#top>Back To Top</a></p>

@@ -1,0 +1,131 @@
+<section class="knowledge-base">
+  <div class="main-section-container">
+    <a class="main-section" href="https://support.markforged.com/hc/en-us/articles/201256399-Unboxing-and-Assembly">
+      <div class="main-section-title">
+        Getting Started
+      </div>
+      <div class="main-section-text">
+        Setup usually takes 80 minutes the first time, and 15 minutes for your second printer.
+      </div>
+      <div class="main-section-link">
+        Read More
+      </div>
+    </a>
+    <a class="main-section" href="https://support.markforged.com/hc/en-us/articles/205927119-MarkForged-Visual-Troubleshooting-Guide">
+      <div class="main-section-title">
+        Troubleshooting
+      </div>
+      <div class="main-section-text">
+        The quickest way to resolve issues.
+      </div>
+      <div class="main-section-link">
+        Read More
+      </div>
+    </a>
+    <a class="main-section" href="https://support.markforged.com/hc/en-us/articles/204109285-Maximizing-Strength-to-Weight-Sandwich-Panels-">
+      <div class="main-section-title">
+        Design Guide
+      </div>
+      <div class="main-section-text">
+        Get the most out of your Mark One.
+      </div>
+      <div class="main-section-link">
+        Read More
+      </div>
+    </a>
+    <a class="main-section" href="https://support.markforged.com/hc/en-us/articles/204108865-Wet-sanding">
+      <div class="main-section-title">
+        Finishing
+      </div>
+      <div class="main-section-text">
+        Quick tips to get the best looking parts.
+      </div>
+      <div class="main-section-link">
+        Read More
+      </div>
+    </a>
+    <a class="main-section" href="https://support.markforged.com/hc/en-us/articles/202169145-Level-The-Print-Bed">
+      <div class="main-section-title">
+        Printer Maintenance
+      </div>
+      <div class="main-section-text">
+        Keep your machine running smoothly.
+      </div>
+      <div class="main-section-link">
+        Read More
+      </div>
+    </a>
+    <a class="main-section" href="https://support.markforged.com/hc/en-us/articles/202654529-Adding-Fiber-to-a-Part">
+      <div class="main-section-title">
+        Advanced Tips
+      </div>
+      <div class="main-section-text">
+        Become a power user.
+      </div>
+      <div class="main-section-link">
+        Read More
+      </div>
+    </a>
+    
+      <section class="hp_knowledge">
+  	{{#if categories}}
+  	  <div class="category-tree">
+  	    {{#each categories}}
+  	      <section class="category">
+  	        {{#if ../has_multiple_categories}}
+  	          <h2><a href="{{url}}">{{name}}</a></h2>
+  	        {{/if}}
+  	        {{#each sections}}
+  	          <section class="section">
+  	            <h3>
+  	              {{#if internal}}
+  	                <span class="visibility-internal" data-title="{{t 'internal'}}">
+  	                  <span class="visibility-internal-icon"></span>
+  	                </span>
+  	              {{/if}}
+  	              <a href="{{url}}">{{name}}</a>
+  	            </h3>
+  	            {{#if articles}}
+  	              <ul class="article-list">
+  	                {{#each articles}}
+  	                  <li {{#if promoted}} class="article-promoted" {{/if}}>
+  	                    {{#if promoted}}
+  	                      <span data-title="{{t 'promoted'}}">★</span>
+  	                    {{/if}}
+  	                    <a href="{{url}}">{{title}}</a>
+  	                  </li>
+  	                {{/each}}
+  	              </ul>
+  	              {{#if more_articles}}
+  	                <a href="{{url}}" class="see-all-articles">
+  	                  {{t 'show_all_articles' count=article_count}}
+  	                </a>
+  	              {{/if}}
+  	            {{else}}
+  	              <i class="section-empty">
+  	                <a href="{{url}}">{{t 'empty'}}</a>
+  	              </i>
+  	            {{/if}}
+  	          </section>
+  	        {{else}}
+  	          <i class="category-empty">
+  	            <a href="{{url}}">{{t 'empty'}}</a>
+  	          </i>
+  	        {{/each}}
+
+  	        {{#if more_sections}}
+  	          <div>
+  	            <a href="{{url}}">{{t 'see_all_sections'}}</a>
+  	          </div>
+  	        {{/if}}
+  	      </section>
+  	    {{/each}}
+
+  	    {{pagination}}
+  	  </div>
+  	{{/if}}
+</section>
+   
+  </div>
+</section>
+<!--{{category_tree_with_article}}-->

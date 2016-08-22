@@ -1,0 +1,90 @@
+<!-- Goals -->
+<p><span class="wysiwyg-font-size-large"><strong>Design Concepts Covered:</strong></span></p>
+	<ul>
+		<li><a href=#tips>Quick Tips for Printing</a></li>
+		<li><a href=#why>Why Use Supports</a></li>
+		<li><a href=#orientation>Correct Print Orientation</a></li>
+		<li><a href=#concave>Printing Parts with Concave Features</a></li>
+		<li><a href=#smallAngles>Printing Small Angles</a></li>
+		<li><a href=#supports>Turning Supports On</a></li>
+	</ul>
+
+<!-- Quick Tips -->
+<p id="tips"> </p>
+<p> </p>
+<p> <span class="wysiwyg-font-size-large"><strong>Quick Tips for Printing</strong></span></p>
+	<p class="wysiwyg-text-align-justify">The following are some quick tips for successfully printing parts. For more information about any of these tips, please see the respective heading below.</p>
+	<ul>
+		<li>Orient parts to be flat on the print bed.</li>
+		<li>Cups or concave openings should be face up to minimize supports needed.</li>
+		<li>The Mark Two is capable of printing overhangs up to 45 degrees without needing supports.</li>
+		<li>When supports are enabled, scaffolding will be applied to any overhand over approximately 40 degrees from vertical.</li>
+	</ul>
+
+<!-- Why Use Supports -->
+<p id="why"><a href=#top>Back To Top</a></p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Why Use Supports?</strong></span></p>
+	<p class="wysiwyg-text-align-justify">Plastic extrusion printing works like a hot glue gun: the material is very flexible when it extrudes out and will sag until it lands on something. This means you need a backing material on which to print. On the first layer of a part, the print bed acts as the backing material.<br /><br />
+	But what if you want to print an arch or a flange on a part that is otherwise "unsupported"? As the name implies, support material provides the backing to hold the extruded plastic in place while you print. Since these supports are only there to help during printing, you can peel them off later. </p>
+
+<!-- Print Flat -->
+<p id="orientation"><a href=#top>Back To Top</a></p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Orient Parts Correctly</strong></span></p>
+	<p class="wysiwyg-text-align-justify">Use the "X", "Y", and "Z" fields under the "Part Settings" toolbar, on the right side of the screen, to orient your part to sit flat on the print bed. A part that is not oriented to sit flat on the bed will result in supports being enabled or a print failure.<br />
+	<em>Note: If you part requires rotation about more than one axis, Eiger will apply orientations in the order of X, Y, Z from the original orientation.</em><br /><br />
+	<img src="/hc/en-us/article_attachments/203980426/PartSettings.png" alt="" /><br /><br />
+	</p>
+	<p class="wysiwyg-text-align-justify">A correctly oriented part will sit flat on the print bed and will not show supports in the Internal View. <br /><br /></p>
+	<p><img src="/hc/en-us/article_attachments/203981006/CorrectPartAndInternalView.png" alt="" width="500px" height="400px" /></p>
+	<p><br /><br /></p>
+	<p class="wysiwyg-text-align-justify">An incorrectly oriented part will sit on an angle to the print bed and will show supports in the Internal View. Parts that are not correctly oriented and therefore use supports will waste extra materials and time. <br /><br /></p>
+	<p><img src="/hc/en-us/article_attachments/203980986/10DegreesPartAndInternalView.png" alt="" width="500px" height="500px" /></p>
+	<p><br /><br /></p>
+
+<!-- Orient Parts Correctly -->
+<p id="concave"><a href=#top>Back To Top</a></p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Printing Parts with Concave Features</strong></span></p>
+	<p class="wysiwyg-text-align-justify">When possible, avoid or minimize the use of support structure on parts with concave features by orienting them such that the cavity is face up. Orienting a part with the cavity facing down will result in more material being used and a longer print time.</p>
+	<p class="wysiwyg-text-align-justify">A correct setup will have any concave features facing up and, in this case, will not require any supports. If it is not possible to avoid using supports, the correct orientation will be the one that minimizes support materials while still ensuring that the entire part is supported. <br /><br /><img src="/hc/en-us/article_attachments/203982426/CorrectOrientation.png" alt="" /><br /><br /></p>
+	<p class="wysiwyg-text-align-justify">An incorrect setup will have concave features facing down or in any other orientation that requires supports. In this example, rotating the part above by 180 degrees and enabling supports adds 34.5 hours to the print time and will use nearly three times as much material.<br /><br /></p>
+	<p><img src="/hc/en-us/article_attachments/203982446/IncorrectOrientation.png" alt="" /></p>
+
+
+<!-- Printing Small Angles -->
+<p id="smallAngles"><a href=#top>Back To Top</a></p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Printing Parts with Small Angles</strong></span></p>
+	<p class="wysiwyg-text-align-justify">When printing features that are overhung up to 45 degrees from vertical, the extruded material will be sufficiently contrained without supports. When printing a part with slightly overhung features or complex shapes, always ensure the part is correctly oriented on the print bed.</p>
+	<p class="wysiwyg-text-align-justify">A correctly setup part with small angles will have no supports enabled. If it is not possible to avoid using supports, the correct orientation will be the one that minimizes support materials while still ensuring that the entire part is supported.<br /><br /><img src="/hc/en-us/article_attachments/204194543/TurbineCorrect.png" alt="" width="400px" height="300px" /></p>
+	<p class="wysiwyg-text-align-justify">An incorrectly setup part with small angles will likely have supports enabled. In this case, supports are enabled because the top of the part will print in places that are not supported by the fins. This will waste time and materials.<br /><br /> <!-- Incorrect Orientation --> <img src="/hc/en-us/article_attachments/204194563/TurbineIncorrect.png" alt="" /><br /><br /></p>
+
+<!-- Adding Support Material -->
+<p id="supports"><a href=#top>Back To Top</a></p>
+<p>  </p>
+<p><span class="wysiwyg-font-size-large"><strong>Adding Support Material<strong></span></p>
+	<p class="wysiwyg-text-align-justify">When it is not possible to orient a part such that all features are supported, the supports will need to be enabled. Unsupported smaller features will result in less sagging but the best quality will be acheieved by enabling supports.</p>
+	<p><strong>To Enable Supports In Eiger:</strong></p>
+	<ol>
+		<!-- Step 1 -->
+		<li>Open Eiger and import the STL file for your part.</li>
+		<!-- Step 2 -->
+		<li>Orient your part as needed using the <strong>"Part Settings"</strong> panel on the right side of your screen.</li>
+		<li>Click <strong>"Advanced Settings"</strong> in the <strong>"Part Settings"</strong> panel.</li>
+		<li>Click the toggle button labeled <strong>"Use Supports"</strong>.<br /><em>Note: If the toggle button is moved to the right and the oval is green, supports have already been enabled. Some parts import into Eiger with supports automatically enabled.</em></li>
+		<li>Click <strong>"Save"</strong> to save your part and options.</li>
+		<li>Ensure the supports are set up correctly by clicking the <strong>"Internal View"</strong> button and locating the supports.<br /><em>Note: If you are still unsure if supports are enabled, try rotating the part to get a different view and see the example below.</em></li> 
+	</ol>
+	<!-- Example Part -->
+	<p><strong>Example of a part that needs supports</strong></p>
+	<p class="wysiwyg-text-align-justify">Due to the nature of this part, it is not possible to print it with all features supported. In this case, it will be important to enable supports in order to avoid sagging.
+	<!-- Example Part -->
+	<br /><br /></p>
+	<p>Correctly orienting this part means that supports will only be enabled for the holes on the sides of the part. With any other orientation, the amount of material needed for supports would be much higher. You can check if supports are on by checking the "Internal View" screen. You should see lines through the area where you expect supports.<br /><br />
+	<!-- Supports Example -->
+	<br /><br /></p>
+
+
+<p><a href=#top>Back To Top</a></p>

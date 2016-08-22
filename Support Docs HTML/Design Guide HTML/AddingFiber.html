@@ -1,0 +1,118 @@
+<!-- Goals -->
+<p><span class="wysiwgy-font-size-large"><strong>Goals: </strong></span></p>
+	<ul>
+		<li><a href=#auto>Automatically Add Fiber To Part</a></li>
+		<li><a href=#manual>Manually Add Fiber To Part</a></li>
+		<li><a href=#small>Print Parts With Small Features</a></li>
+		<li><a href=#incomplete>Print Parts With Incomplete Fiber Fill</a></li>
+	</ul>
+
+
+<p> </p>
+<!-- Important BlockQuote Information -->
+<blockquote>
+	<p><span class="wysiwyg-font-size-large"><strong>Important:</strong></span></p>
+	<p>Make sure to always load the correct fiber into the machine. Each type has different print parameters. Printing with a different fiber than is indicated in Eiger will result in a failed print.</p>
+</blockquote>
+
+<!-- General Notes -->
+<p id="notes"> </p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>General Notes about Fiber Printing</strong></span></p>
+	<p>Printing with fiber is a new manufacturing process. Like any other manufacturing process, it has limitations. Please take into consideration the following variables when designing parts for printing with fiber or editing layers with the Eiger:</p>
+	<ul>
+		<li><strong>Minimum feature size:</strong> This means that not all areas of your part can be filled with fiber. The algorithms employed by Eiger to fill your part do their best to make sure that as much fiber will fit into your part as possible.</li>
+		<li><strong>The fiber has a integer width:</strong> This means the width must be accounted for when the fiber makes turns. There are some corners and turns that the fiber can't make. There are also some spaces (remainders) that cannot be filled with fiber. They will automatically be filled with nylon. </li>
+		<li><strong>The fiber cannot print over mid-air:</strong> For best fiber adhesion, fill the layers below with 100% plastic fill so the fibers have something to adhere to. In the <strong>Internal View</strong> you can change the plastic <strong>Fill Type</strong> of a layer to floor or roof to give it 100% fill.</li>
+		</ul>
+
+<!-- Automatic Routing -->
+<p id="auto"> </p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Automatic Fiber Routing</strong></span></p>
+	<p>When printing with fiber is enabled, Eiger will automatically create a <a href="/hc/en-us/articles/207994166 #sandwich">sandwich panel</a> to help ensure strength and stability of the part. By default, Eiger will place fiber on the top and bottom of your part.</p>
+	<p><strong>To enable automatic fiber routing:</strong></p>
+	<ul>
+		<ol><!-- Step 1 -->
+			<li>Open Eiger and import your STL file.<br /><br /><img src="/hc/en-us/article_attachments/204234183/OctogonPartEiger.png" alt="" width="350px" /><br /><br /></li>
+			<!-- Step 2 -->
+			<li>Locate and toggle the <strong>"Use Fiber"</strong> button in the <strong>"Part Settings"</strong> panel on the right side of the screen. This will bring up a new set of options below.<br /><em>Note: If the toggle button is moved to the right and the oval is green, fiber is already being used in the part.</em><br /><br /><img src="/hc/en-us/article_attachments/203994446/PartSettingUseFiber.png" alt="" width="250px" height="350px" /> <br /><br /></li>
+			<!-- Step 3 -->
+			<li>Select a type of fiber to print with in the <strong>"Fiber Material"</strong> dropdown menu and the type of fill from the <strong>"Fiber Fill Type"</strong> dropdown menu.<br /><br /> <!-- Include picture of dropdown menu --><img src="/hc/en-us/article_attachments/204234223/PrintWithFiberDropdown.png" alt="" width="500px" /><br /><br /></li>
+			<!-- Step 4 -->
+			<li>Configure the options under the <strong>"Advanced Settings"</strong> heading as needed.</li>
+			<!-- Step 5 -->
+			<li>Once you have configured the fiber in your part, click <strong>"Save"</strong> to apply the changes.</li>
+		</ol>
+	</ul>
+	<p>Your part should now be ready to print. If you want to further adjust the amount of fiber in different layers of your part, see the sections below.</p>
+
+<!-- Manual Routing -->
+<p id="manual"><a href="#top">Back To Top</a></p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Manual Fiber Routing</strong></span></p>
+	<p>For engineers who want full control of the fiber routing, Eiger lets you edit the part layer-by-layer.</p>
+	<p>To change the fiber layout in your part:</p>
+	<ul>
+		<ol>
+			<!-- Step 1 -->
+			<li>Open Eiger and import your STL file.<br /><br /><img src="/hc/en-us/article_attachments/204234183/OctogonPartEiger.png" alt="" width="350px" /><br /><br /></li>
+			<!-- Step 2 -->
+			<li>Toggle the <strong>"Use Fiber"</strong> button in the <strong>"Part Settings"</strong> panel on the right side of the screen.<br /><em>Note: If the toggle button is moved to the right and the oval is green, fiber is already being used in the part.</em><br /><br /> <img src="/hc/en-us/article_attachments/203994446/PartSettingUseFiber.png" alt="" width="250px" height="350px" /> <br /><br /></li>
+			<!-- Step 3 -->
+			<li>Select a type of fiber to print with in the <strong>"Fiber Material"</strong> dropdown menu and the type of fill from the <strong>"Fiber Fill Type"</strong> dropdown menu.<br /><br /> <!-- Include picture of dropdown menu --><img src="/hc/en-us/article_attachments/204234223/PrintWithFiberDropdown.png" alt="" width="500px" /><br /><br /></li>
+			<!-- Step 4 -->
+			<li>Configure the options under the <strong>"Advanced Settings"</strong> heading as needed.</li>
+			<!-- Step 5 -->
+			<li>Once you have configured the fiber in your part, click <strong>"Save"</strong> to apply the changes.</li>
+			<!-- Step 6 -->
+			<li>Click the <strong>"Internal View"</strong> button to bring up the view of the layers of the part.</li>
+			<!-- Step 7 -->
+			<li>Click the <strong>"2D"</strong> button near the top right of the screen to switch the view to that of individual layers<br /><br /> <!-- Image of 2D/3D buttons --><img src="/hc/en-us/article_attachments/204022826/2D3D.png" alt="" /><br /><br /></li>
+			<!-- Step 8 -->
+			<li>Use the slider at the bottom of the screen or the arrow buttons on your keyboard to scroll through the layers until you reach one that you would like to change.<br /><br /> <!-- Image of layer bar --><img src="/hc/en-us/article_attachments/204022846/OctogonLayerBar.png" alt="" /><br /><br /></li>
+			<!-- Step 9 -->
+			<li>Use the <strong>"F"</strong> key on your keyboard to toggle the fiber option for that layer. If there previously was no fiber in the layer, fiber will be added. If there was already fiber in the layer, it will be removed. <br /><em>Note: This process may take some time. Wait for Eiger to finish processing a command for the layer before sending another one.</em></li>
+			<!-- Step 10 -->
+			<li>Once you have configured the fiber in your part, click <strong>"Save"</strong>.</li>
+		</ol>
+	</ul>
+	<p>You part should now be ready to print. If, at any point, you need to change the settings in the <strong>"Part View"</strong> screen, save your part and then click on <strong>"Part View"</strong>.</p>
+
+<!-- Printing Small Features -->
+<p id="small"> </p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Printing Parts with Small Features</strong></span></p>
+	<p>The Mark Two embeds continuous strands of fiber. In a given layer, there must be enough area to route the fiber. The minimum area is about 1 square inch. Sections smaller than this are below the minimum feature size and therefore cannot have continuous fiber; these will automatically be filled in with plastic. </p>
+	<p><strong>To print a part with small features:</strong></p>
+	<ul>
+		<ol><!-- Step 1 -->
+			<li>Open Eiger and import your STL file.<br /><br /><img src="/hc/en-us/article_attachments/204235643/iPhoneCaseEiger.png" alt="" width="400px" /><br /><br /></li>
+			<!-- Step 2 -->
+			<li>Toggle the <strong>"Use Fiber"</strong> button in the <strong>"Part Settings"</strong> panel on the right side of the screen.<br /><em>Note: If the toggle button is moved to the right and the oval is green, fiber is already being used in the part.</em><br /><br /> <img src="/hc/en-us/article_attachments/203994446/PartSettingUseFiber.png" alt="" width="250px" height="350px" /> <br /><br /></li>
+			<!-- Step 3 -->
+			<li>Configure settings for printing with fiber in the <strong>"Part Settings"</strong> panel. For more information about this step, see <a href="#auto">Automatic Fiber Routing</a> or <a href="#manual">Manual Fiber Routing</a>, above.<br /><br /> <!-- Image of fiber settings --> <img src="/hc/en-us/article_attachments/203994426/FiberSettings.png" alt="" width="250px" height="350px" /><br /><br /></li>
+			<!-- Step 4 -->
+			<li>Once the fiber settings are configured, click the <strong>"Internal View"</strong> button to bring up the view of the layers of the part.</li>
+			<!-- Step 5 -->
+			<li>Look at the <strong>"2D"</strong> and <strong>"3D"</strong> views of the part to see where the fiber was automatically placed and edit any fiber settings as needed.<br /><br /> <img src="/hc/en-us/article_attachments/204235663/iPhoneCaseRings.png" alt="" /><br /><br /></li>
+		<!-- Step 6 -->
+		<li>Once you have configured the fiber in your part, click <strong>"Save"</strong></li>
+		</ol>
+	</ul>
+	<p>In the above example, the walls of the part were not big enough to hold fiber. By default they were filled with plastic. In order to add fiber to a part like this, the surface area of the walls would need to be increased.</p>
+
+<!-- Printing with Incomplete Fiber Fill -->
+<p id="incomplete"><a href="#top">Back To Top</a></p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Printing Parts with Incomplete Fiber Fill</strong></span></p>
+	<p class="wysiwyg-text-align-justify">Before beginning, it is important to note the differences in the options in the <strong>"Fiber Fill Type"</strong> dropdown menu. The <strong>"Concentric"</strong> option will follow the perimeter of the part or features and is good for reinforcing walls. The <strong>"Isotropic"</strong> option follows a zig-zag pattern along specified angles and is good for reinforcing a part in all directions. The <strong>"Isotropic"</strong> option allows you to specify a list of angles you want the fiber to print at. Each layer will print at the next angle value in the list; if there are more layers than angles specified, the list will start over. The <strong>"Isotropic"</strong> option also allows you to specify a number of Concentric rings to be applied. These will be applied along the walls of the part or feature and then the Isotropic fiber lines will print inside the perimeter created by the rings.</p>
+	<p class="wysiwyg-text-align-justify">Parts that are complex shapes may not be able to have entire layers of fiber, which will make the part weaker. In the case that a part cannot be sufficiently filled with fiber automatically, you can adjust the path that the fiber will print along. When using the <strong>"Isotropic"</strong> option on a part that does not have complete fiber ill on a layer, it is suggested that you use angles for the Isotropic layers that are perpendicular or that will cross each other to avoid having overlapping gaps between layers.</p>
+	<p><strong>Example of a part with incomplete fiber fill:</strong></p>
+		<ul>
+			<p><img src="/hc/en-us/article_attachments/204234463/CrossCaseEigerView.png" alt="" width="500px" /><br /><br />This part was setup to print Kevlar in an Isotropic pattern at angles of 45 degrees and 135 degrees. Below are the layouts of six layers to be printed. The fiber is not able fill the middle of the cross section on any single layer.</p>
+			<p><img src="/hc/en-us/article_attachments/204022726/CrossCaseIsotropicLayers.png" alt="" width="500px" /></p>
+			<p>With the alternating angles of the Isotropic print pattern the entire center of the cross section is filled with fiber in a way that makes the part very strong.<br /><br /><img src="/hc/en-us/article_attachments/204022866/CrossCase3DView.png" alt="" width="500px" /></p>
+		</ul>
+
+<p><a href="#top">Back To Top</a></p>

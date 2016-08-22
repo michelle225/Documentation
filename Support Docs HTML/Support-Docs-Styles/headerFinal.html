@@ -1,0 +1,276 @@
+<script src="https://zendesk.tv/conditional_fields/helpcenter.js"></script>
+<script>var cfaRules = [{"fieldType":"tagger","field":24337429,"value":"bug_report","select":[24395835],"formId":69129,"requireds":[]},{"fieldType":"tagger","field":24337429,"value":"other","select":[24395665],"formId":69129,"requireds":[]},{"fieldType":"tagger","field":24337469,"value":"fiber_cutter","select":[24337599,24395805],"formId":69129,"requireds":[]},{"fieldType":"tagger","field":24337469,"value":"fiber_extrusion","select":[24337599,24395655],"formId":69129,"requireds":[]},{"fieldType":"tagger","field":24337469,"value":"hardware_other","select":[24338329],"formId":69129,"requireds":[]},{"fieldType":"tagger","field":24337469,"value":"plastic_extrusion","select":[24395705,24395795],"formId":69129,"requireds":[]},{"fieldType":"tagger","field":24337479,"value":"fiber_jam","select":[24395645],"formId":69129,"requireds":[]},{"fieldType":"tagger","field":24337479,"value":"print_failure_other","select":[24338339],"formId":69129,"requireds":[]},{"fieldType":"tagger","field":24395205,"value":"firmware_issue","select":[24337399,24338299],"formId":69129,"requireds":[24337399,24338299]},{"fieldType":"tagger","field":24395205,"value":"hardware_issue","select":[24337469,24395135],"formId":69129,"requireds":[24337469]},{"fieldType":"tagger","field":24395205,"value":"print_failure_issue","select":[24337399,24337479],"formId":69129,"requireds":[24337399,24337479]},{"fieldType":"tagger","field":24395205,"value":"software_issue","select":[24337429],"formId":69129,"requireds":[24337429]},{"fieldType":"checkbox","field":24395705,"value":"yes","select":[24338489,24395785],"formId":69129,"requireds":[]},{"fieldType":"checkbox","field":24395835,"value":"yes","select":[24395845],"formId":69129,"requireds":[]}];</script>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      {{#link 'help_center'}}
+      <img src="{{logo_url}}" alt="{{t 'logo'}}">
+      {{/link}}
+    </div>
+    <nav class="user-nav">
+      <div class="eiger-button">
+        <div class="eiger-button-label">
+          Submit a Ticket
+        </div>
+        {{link 'new_request' class='submit-a-request'}}
+      </div>
+      <div class="user-container">
+        {{user_info}}
+        <img src="//p4.zdassets.com/hc/theme_assets/570965/200049915/gear-2-dark.svg" /img>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="sidebar">
+  <div class="sidebar-section">
+    <div class="sidebar-search">
+      {{search}}
+    </div>
+  </div>
+  <div class="sidebar-container">
+    <div class="category-tree-with-article" data-asynchtml="">
+      <ul>
+
+        <li class="category">
+          <h2>Documentation</h2>
+
+          <!-- LIST OF TOP SECTIONS -->
+          <ul>
+          <!-- MARK TWO -->
+<!-- ******* Delete this comment to release Mark Two Docs *******
+
+            <li class="printer-revision">
+              <h3>Mark Two</h3>
+              <ul class="printer-section-list">
+                <li class="section">
+                  <h3>Getting Started</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207821106">Safety First</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208157143">Important Nylon Information</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207896226">What's in the Box?</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208199873">Unboxing and Assembly</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208199883">Activate your Mark Two</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208199893">Connecting to your Mark Two</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208199913">Setting Up Nylon</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207854866">Loading Nylon Filament</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208198473">Loading Composite Filament</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207896386">Level the Print Bed</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208157283">Preparing the Print Bed</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207896406">Printing Your First Part</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208199973">Removing a Print from the Print Bed</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Design Guide</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207951316">Orient Parts for Printing</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207994166">Maximizing Strength to Weight (Sandwich Panel)</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207985166">Printing Flat Parts - Tooling and Fixtures</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208320373">Adding Fiber to a Part</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208282103">Editing Layers</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207994216">Designing for Plastic 3D Printing</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208282163">Embedding Components</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Materials</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/211060603">Nylon</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/211160183">Onyx</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/211060883">Carbon Fiber</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/211061343">Fiberglass</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/209413246">Kevlar</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208118516">High-Strength, High-Temperature Fiberglass</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Finishing</h3>
+                  <ul class="article-list">
+                     <li><a href="https://support.markforged.com/hc/en-us/articles/207994236">Dying Parts Black</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208282123">Wet Sanding</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208320483">Removing Supports</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Printer Maintenance</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207985226">Fiber Bowden Tube Removal and Reinstallation</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207985276">Fiber Extruder Removal and Reinstallation</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208342523">Installing the Fiber Spool Tensioner</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/210815203">Replacing the Mark Two Fiber Nozzle</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208867866">Replacing the Mark Two Plastic Nozzle</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208282283">Adjusting the Belt Tensioner</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208108466">Upgrading Printer Type Kit</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Advanced Tips</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208342553">Unload Material</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207985336">Material Handling and Storage</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208011606">Offline Printing/Printing from USB</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207985306">Print Queuing</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208011656">Inviting a User to Join your Eiger Organization</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208282313">How to Rename a Printer</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Troubleshooting</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208342613">My Print Failed</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207985456">Nylon Calibration Extrude Test</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208342623">Dislocations</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208290503">Firmware Update</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208342663">Save Logs to USB</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208305013">Troubleshooting a Jammed Extruder</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207985566">Removing Plastic from the Nylon Bowden Tube</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207985596">Parts Peel Off the Print Bed</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208342693">No Fiber Coming from Nozzle</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208011866">Where is my Machine ID?</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208342843">How to Reset your Eiger Password</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/210855163">Frequently Asked Questions</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207985286">Clearing a Fiber Jam</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            ******* Delete this comment to release Mark Two Docs ******* 
+-->
+            <!-- END: MARK TWO -->
+         
+          <!-- MARK ONE -->
+            <li class="printer-revision">
+              <!-- ***Uncomment with Mark Two Roll Out
+              <h3>Mark Two</h3>
+              *** -->
+              <ul class="printer-section-list">
+
+                <li class="section">
+                  <h3>Getting Started</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201522795">Safety First</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204765189">*Important Nylon Information*</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/205367315">What's in the Box?</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201256399">Unboxing and Assembly</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203059355">Activate Your Mark One</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201566449">Connecting To Your Mark One</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203393939">Setting Up Materials</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204108445">Loading Nylon Filament</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204108835">Loading Composite Filament</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202169145">Level The Print Bed</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201566609">Preparing The Print Bed</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202663835">Printing Your First Part</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203339765">Removing A Print From The Print Bed</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Materials</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/211060603">Nylon</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/211160183">Onyx</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/211060883">Carbon Fiber</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/211061343">Fiberglass</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/209413246">Kevlar</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208118516">High-Strength, High-Temperature Fiberglass</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Design Guide</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203464889">Orient Parts for printing + Using supports.</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204109285">Strong, Light Parts - (Sandwich Panel)</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204109545">Print Flat Parts - (Tooling + Fixtures)</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202654529">Adding Fiber to a part.</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204364155">Editing Layers.</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203677829">Designing for plastic 3D printing</a></li>
+                  </li>             
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204109695">Embedding Components</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Finishing</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203489829">Dying Parts Black</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204108865">Wet sanding</a><article class="article-body" data-asynchtml-target=""><div class="loader"></div></article>
+                    </li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203123685">Removing Supports</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Printer Maintenance</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202928359">Fiber Bowden Tube Removal &amp; Reinstallation.</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/210177323">Nylon Bowden Tube Removal &amp; Reinstallation.</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/205242713">Adjust Fiber Prime Length</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204017719"> Fiber Extruder Removal &amp; Reinstallation.</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202953279">Installing Fiber Spool Tensioner</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201567369">CFF Fiber Nozzle Replacement (and How to Correct a Nozzle Jam)</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202170065">FFF Plastic / Nylon Filament Nozzle Replacement</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/205463043">Adjusting the Belt Tension on the Mark One for Optimal Performance</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Advanced Tips</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201566619">Unload Material</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202191325">Material Handling and Storage</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202460369">Offline Printing/Printing from USB</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/207352373">Print Queuing</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/208190383">Projects</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202372049">Inviting A User to Join Your Eiger Organization</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203667255">How to Rename a Printer</a></li>
+                  </ul>
+                </li>
+
+                <li class="section">
+                  <h3>Troubleshooting</h3>
+                  <ul class="article-list">
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204267609">My Print Failed!</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/205273463">Nylon Calibration Extrude Test</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204734279">Dislocations</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202326209">Firmware Update Guide</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201848739">What is the USB drive for?</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201849609">What is the glue stick for?</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204372075">Getting help in Eiger</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204353969">Printer Disabled Message</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/204493555">Saving Log files to USB</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202081759">Troubleshooting A Jammed Extruder</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202064519">Extruder Clicks When Loading Plastic</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202103149">Removing Plastic From Clear Tube.</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201566749">Low Plastic Extrusion</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202083699">Parts Feel Weak And/Or Delaminate</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202667125">Mark One System Reset</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201567129">Parts Peel or First Layer Does Not Stick To Print Bed</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201567139">First Layer is Opaque and/or Sparsely Filled</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201567159">Lumps Appear on Outside of Part</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201567329">No Fiber Coming From Nozzle</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/202325709">Fiber does not adhere well to the part</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203023995">First layers of nylon look smeared</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/201848689">What is this cylinder being printed in the corner?</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203059365">Where Is My Machine ID?</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203505489">Fiber Clogged in Bowden Tube</a></li>
+                    <li><a href="https://support.markforged.com/hc/en-us/articles/203059335">Reset Your Password</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </li> <!-- END: MARK ONE -->
+          </ul> <!-- END: TOP SECTIONS -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

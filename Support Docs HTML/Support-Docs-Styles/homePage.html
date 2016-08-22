@@ -1,0 +1,133 @@
+<section class="knowledge-base">
+  <div class="main-section-container">
+      <div class="main-section-title">
+        MarkForged Support Documentation
+      </div>
+    <br />
+
+    
+     <section class="knowledge-base">
+  <div class="main-section-container">
+      <div class="main-section-title">
+        MarkForged Support Documentation
+      </div>
+    <br />
+      <div class="main-section-text">
+        Having a problem with your MarkForged printer? Need help setting up or maintaining components? Check out the documents below!<br /><br />For additional assistance, please contact support by clicking the "Submit a Ticket" at the upper right corner of any support doc.
+      </div>
+     <br />
+    
+    <div class="main-section-container">
+      
+        <div class="main-section-title">Getting Started</div>
+        <div class="main-section-text">Get your printer from still-in-the-box to print-ready with these guides.</div>
+        <a class="main-section" href="">
+        <div class="main-section=link">See More</div>
+        </a>
+
+      
+        <div class="main-section-title">Materials</div>
+        <div class="main-section-text">Learn more about the materials you can print with.</div>
+        <a class="main-section" href="">
+        <div class="main-section=link">See More</div>
+        </a>
+      
+      
+        <div class="main-section-title">Design Guide</div>
+        <div class="main-section-text">Get the most out of your Mark Two printer with these tips.</div>
+        <a class="main-section" href="">
+        <div class="main-section=link">See More</div>
+        </a>
+      
+      
+        <div class="main-section-title">Finishing</div>
+        <div class="main-section-text">Create high-quality finishes on your parts with these guides.</div>
+        <a class="main-section" href="">
+        <div class="main-section=link">See More</div>
+        </a>
+      
+      
+        <div class="main-section-title">Printer Maintenance</div>
+        <div class="main-section-text">Keep your machine running smoothly and successfully.</div>
+        <a class="main-section" href="">
+        <div class="main-section=link">See More</div>
+        </a>
+      
+      
+        <div class="main-section-title">Advanced Tips</div>
+        <div class="main-section-text">Learn about the more advanced features that are part of Eiger and your Mark Two printer.</div>
+        <a class="main-section" href="">
+        <div class="main-section=link">See More</div>
+        </a>
+      
+      
+        <div class="main-section-title">Troubleshooting</div>
+        <div class="main-section-text">Resolve issues quickly and effectively with these articles.</div>
+        <a class="main-section" href="">
+        <div class="main-section=link">See More</div>
+        </a>
+      
+    </div>
+
+      <section class="hp_knowledge">
+    {{#if categories}}
+      <div class="category-tree">
+        {{#each categories}}
+          <section class="category">
+            {{#if ../has_multiple_categories}}
+              <h2><a href="{{url}}">{{name}}</a></h2>
+            {{/if}}
+            {{#each sections}}
+              <section class="section">
+                <h3>
+                  {{#if internal}}
+                    <span class="visibility-internal" data-title="{{t 'internal'}}">
+                      <span class="visibility-internal-icon"></span>
+                    </span>
+                  {{/if}}
+                  <a href="{{url}}">{{name}}</a>
+                </h3>
+                {{#if articles}}
+                  <ul class="article-list">
+                    {{#each articles}}
+                      <li {{#if promoted}} class="article-promoted" {{/if}}>
+                        {{#if promoted}}
+                          <span data-title="{{t 'promoted'}}">★</span>
+                        {{/if}}
+                        <a href="{{url}}">{{title}}</a>
+                      </li>
+                    {{/each}}
+                  </ul>
+                  {{#if more_articles}}
+                    <a href="{{url}}" class="see-all-articles">
+                      {{t 'show_all_articles' count=article_count}}
+                    </a>
+                  {{/if}}
+                {{else}}
+                  <i class="section-empty">
+                    <a href="{{url}}">{{t 'empty'}}</a>
+                  </i>
+                {{/if}}
+              </section>
+            {{else}}
+              <i class="category-empty">
+                <a href="{{url}}">{{t 'empty'}}</a>
+              </i>
+            {{/each}}
+
+            {{#if more_sections}}
+              <div>
+                <a href="{{url}}">{{t 'see_all_sections'}}</a>
+              </div>
+            {{/if}}
+          </section>
+        {{/each}}
+
+        {{pagination}}
+      </div>
+    {{/if}}
+</section>
+   
+  </div>
+</section>
+<!--{{category_tree_with_article}}-->

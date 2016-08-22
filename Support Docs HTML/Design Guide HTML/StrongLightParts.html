@@ -1,0 +1,85 @@
+<!-- Goals -->
+<p><span class="wysiwyg-font-size-large"><strong>Goals:</strong></span></p>
+	<ul>
+		<li><a href="#strong">Create Strong Parts</a></li>
+		<li><a href=#print>Printing Strong Parts
+		<li><a href="#flexible">Create Flexible Parts</a></li>
+		<li><a href="#flat">Print Flat Parts</a></li>
+	</ul>
+
+<!-- Creating Strong Parts -->
+<p id="strong"> </p>
+<p> </p>
+<p id="sandwich"><span class="wysiwyg-font-size-large"><strong>Creating Strong Parts</strong></span></p>
+	<p class="wysiwyg-text-align-justify">When working with composite materials, a sandwich panel is a load-distribution device that is similar to an I-Beam. In a sandwich panel, the top and bottom layers are made of fiber or some other strong material; the middle is made of nylon or another light material. In this design, the majority of the load is resisted by the carbon. The interior plastic simply transfers the sheer stress between the top and bottom layers.</p>
+	<p class="wysiwyg-text-align-justify"><img src="/hc/en-us/article_attachments/204223043/SandwichPanelExample.png" alt="" width="500px" /></p>
+
+<!-- Printing Sandwich Panels -->
+<p id="print"><a href=#top>Back To Top</a></p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Printing a Part with Sandwich Panels</strong></span></p>
+	<p><strong>To print a part using the sandwich panel fiber layout:</strong></p>
+
+	<ol>
+		<!-- Step 1 -->
+		<li>Open Eiger and import your STL file.<br /><br /><img src="/hc/en-us/article_attachments/204201703/QuadcopterSTLEiger.png" alt="" width="500px" height="250px" /><br /><br /></li>
+		<!-- Step 2 -->
+		<li>Toggle the <strong>"Use Fiber"</strong> button in the <strong>"Part Settings"</strong> panel on the right side of the screen.<br /><em>Note: If the toggle button is moved to the right and the oval is green, fiber is already being used in the part.</em><br /><br /> <!-- Image of fiber enabled --> <img src="/hc/en-us/article_attachments/203994446/PartSettingUseFiber.png" alt="" width="250px" height="350px" /> <br /><br /></li>
+		<!-- Step 3 -->
+		<li>Configure settings for printing with fiber in the <strong>"Part Settings"</strong> panel.<br /><br /><img src="/hc/en-us/article_attachments/204832463/FiberSettings.png" alt="" width="250px" /><br /><br /></li>
+		<!-- Step 4 -->
+		<li>Check that fiber settings are correct in the <strong>"Internal View"</strong> screen. Fiber layers will be visible on the part as either blue or yellow lines.<br /><br /> <!-- Image of carbon layers --> <img src="/hc/en-us/article_attachments/203994466/QuadcopterSandwichTop.png" alt="" width="500px" height="250px" /><br /><br /><img src="/hc/en-us/article_attachments/204201683/QuadcopterSandwichIso.png" alt="" width="500px" height="200px" /><br /><br /></li>
+		<!--Step 5: Add Link Here when next page is done -->
+		<li>To add or remove layers, or to change the fiber layout, see <a href="/hc/en-us/articles/208320373#manual">"Manual Fiber Routing"</a><br /><br /></li>
+	</ol>
+
+<!-- Creating Flexible Parts -->
+<p id="flexible"><a href="#top">Back To Top</a></p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Creating Flexible Parts</strong></span></p>
+	<p>If you want a part to be more flexible or do not need it to have strong load bearing capabilities, you can choose to put fiber just in the middle of a part. This can save material, if you choose to use fewer fiber layers in the middle than you would have had from the top and bottom.</p>
+
+	<p><strong>To set up a print with fiber in the middle:</strong></p>
+	<ol>
+		<!-- Step 1 -->
+		<li>Open Eiger and import your STL file<br /><br /><img src="/hc/en-us/article_attachments/204201703/QuadcopterSTLEiger.png" alt="" width="500px" height="250px" /><br /><br /></li>
+		<!-- Step 2 -->
+		<li>Toggle the <strong>"Use Fiber"</strong> button in the <strong>"Part Settings"</strong> panel on the right side of the screen.<br /><em>Note: If the toggle button is moved to the right and the oval is green, fiber is already being used in the part.</em><br /><br /> <img src="/hc/en-us/article_attachments/203994446/PartSettingUseFiber.png" alt="" width="250px" height="350px" /> <br /><br /></li>
+		<!-- Step 3 -->
+		<li>Configure settings for printing with fiber in the <strong>"Part Settings"</strong> panel.<br /><br /> <!-- Image of fiber settings --> <img src="/hc/en-us/article_attachments/204832463/FiberSettings.png" alt="" width="250px" /><br /><br /></li>
+		<!-- Step 4 -->
+		<li>Click the <strong>"Internal View"</strong> button to bring up the view of the layers of the part.</li>
+		<!-- Step 5 -->
+		<li>In the 3D View, click on the carbon layers at the bottom and press the <strong>"F"</strong> key on your keyboard to remove them.<br /><br /><img src="/hc/en-us/article_attachments/204003186/LayersBarQuadcopter.png" alt="" width="600px" /><br /><br /></li>
+		<!-- Step 6 -->
+		<li>Click the <strong>"2D"</strong> button near the top right of the screen to switch the view to that of individual layers</li>
+		<!-- Step 7 -->
+		<li>Find the central layer of your part by clicking on the bar at the bottom of the screen or by using the arrow keys.</li>
+		<!-- Step 8 -->
+		<li>Use the <strong>"F"</strong> key on your keyboard to add fiber to the desired number of central layers for your part. <br /><em>Note: Remember that the more fiber you put in the center of your part, the less flexible it will be.</em><br /><br /><img src="/hc/en-us/article_attachments/204003206/QuadcopterFiberInMiddle.png" alt="" width="600px" /><br /><br /></li>
+	</ol>
+
+<!-- Printing Flat Parts -->
+<p id="flat"><a href="#top">Back To Top</a></p>
+<p> </p>
+<p><span class="wysiwyg-font-size-large"><strong>Printing Flat Parts</strong></span></p>
+	<p>For parts that are flat or that have parallel top and bottom plates, the use of <a href="#sandwich">sandwich panels</a> is a good design choice. The fiber at the top and bottom of the part will keep the part rigid and sturdy, whlie the plastic in the center will keep the part light and cost effective. In addition to the top and bototm fiber plates, depending on the strength or size of the part, it may be useful to add another fiber plate to the center of the part. The central fiber plate will help promote shape and integrity of the part when subjected to loads or stress.</p>
+	<p><strong>To set up a part to print flat:</strong></p>
+	<ol>
+		<!-- Step 1 -->
+		<li>Open Eiger and import your STL file<br /><br /><!-- Image of STL in Eiger --><img src="/hc/en-us/article_attachments/204223863/FlatPartExampleSTL.png" alt="" width="400px" /><br /><br /></li>
+		<!-- Step 2 -->
+		<li>Toggle the <strong>"Use Fiber"</strong> button in the <strong>"Part Settings"</strong> panel on the right side of the screen.<br /><em>Note: If the toggle button is moved to the right and the oval is green, fiber is already being used in the part.</em><br /><br /> <img src="/hc/en-us/article_attachments/203994446/PartSettingUseFiber.png" alt="" width="250px" height="350px" /> <br /><br /></li>
+		<!-- Step 3 -->
+		<li>Configure settings for printing with fiber in the <strong>"Part Settings"</strong> panel.<br /><br /><img src="/hc/en-us/article_attachments/204628186/FiberSettingsKevlar.png" alt="" width="250px" /><br /><br /></li>
+		<!-- Step 4 -->
+		<li>Click the <strong>"Internal View"</strong> button to bring up the view of the layers of the part.<br /><br /> <!-- Image with two layers of fiber --><img src="/hc/en-us/article_attachments/204004906/FlatPartTwoLayers.png" alt="" width="600px" /><br /><br /></li>
+		<!-- Step 5 -->
+		<li>Click the <strong>"2D"</strong> button near the top right of the screen to switch the view to that of individual layers</li>
+		<!-- Step 6 -->
+		<li>Find the central layer of your part by clicking on the bar at the bottom of the screen or by using the arrow keys.</li>
+		<!-- Step 7 -->
+		<li>Use the <strong>"F"</strong> key on your keyboard to add fiber to the desired number of central layers for your part. <br /><br /><!--Image with three layers of fiber --><img src="/hc/en-us/article_attachments/204223883/FlatPartThreeLayers.png" alt="" width="600px" /><br /><br /></li>
+	</ol>
+
+<p><a href="#top">Back To Top</a></p>
